@@ -1,5 +1,5 @@
 // index.js
-import express from 'express';
+import express from "express";
 import bodyParser from 'body-parser';
 import database from './database/database.js'
 import router from './routes/auth.js';
