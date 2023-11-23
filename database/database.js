@@ -1,12 +1,11 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize({
-    host: process.env.DB_HOST,
+const database = new Sequelize({
     username: 'root',
-    password: 'jarssdev',
+    password: '',
     database: 'coffe-shop',
-    port: process.env.PORT,
+    port: 3306,
     dialect: "mysql"
 });
 
-export default db;
+export default database;

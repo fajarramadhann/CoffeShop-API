@@ -1,4 +1,3 @@
-// index.js
 import express from "express";
 import bodyParser from 'body-parser';
 import database from './database/database.js'
@@ -22,6 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/auth', router);
+// app.use('/api/products')
 
 // Sinkron database
 database.sync().then(() => {
