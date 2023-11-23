@@ -1,7 +1,7 @@
-import { Sequelize, DataTypes } from "sequelize";
+import { DataTypes } from "sequelize";
 import database from "../database/database.js";
 
-const Products = database.define("products", {
+const Products = database.define('products', {
   name: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -14,10 +14,10 @@ const Products = database.define("products", {
     type: DataTypes.FLOAT,
     allowNull: false,
   },  
-  imageUrl: {
-    type: DataTypes.FLOAT,
-    allowNull: false,
-  },
+  // imageUrl: {
+  //   type: DataTypes.STRING,
+  //   allowNull: true,
+  // },
 },
 {
   freezeTableName:true

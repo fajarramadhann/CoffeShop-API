@@ -1,10 +1,12 @@
 import express from "express";
-import { createProduct, getAllProducts } from "../controller/productControllers.js";
+import { getAllProducts, createProduct, getProductById, updateProduct, deleteProduct } from "../controller/productControllers.js";
 
-const auth = express.Router();
+const Router = express.Router();
 
-auth.get('/produk', getUsers);
-auth.post('/tambah_produk', registerUser)
-auth.post('/produkBy', {id}, loginUser)
+Router.post('/tambah_produk', createProduct)
+Router.get('/produk', getAllProducts);
+Router.get('/produk/:id', getProductById)
+Router.put("/produk/:id", updateProduct)
+Router.delete("/produk/:id", deleteProduct)
 
-export default auth;
+export default Router;

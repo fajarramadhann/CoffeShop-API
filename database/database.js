@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize";
 
 const database = new Sequelize({
     username: 'root',
-    password: '',
+    password: 'jarssdev',
     database: 'coffe-shop',
     port: 3306,
     dialect: "mysql"
