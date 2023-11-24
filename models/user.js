@@ -1,4 +1,3 @@
-import Sequelize from "sequelize";
 import { DataTypes } from "sequelize";
 import database from '../database/database.js'
 
@@ -29,4 +28,4 @@ const Users = database.define('users', {
     freezeTableName:true
 });
 
-export default Users
+export default Users;
