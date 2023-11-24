@@ -1,9 +1,10 @@
 import { Sequelize } from "sequelize";
 
 const database = new Sequelize({
-    username: 'root',
-    password: '',
-    database: 'coffe-shop',
+    host: 'sql.freedb.tech',
+    username: 'freedb_admin cilamaya',
+    password: '5v4BRNbBY?cwbDF',
+    database: 'freedb_coffe shop cilamaya',
     port: 3306,
     dialect: "mysql"
 });
